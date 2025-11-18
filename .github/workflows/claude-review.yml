@@ -12,9 +12,10 @@ jobs:
   claude-auto-review:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      pull-requests: write
-      id-token: write
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
     steps:
       - uses: actions/checkout@v5
       - uses: anthropics/claude-code-action@v1
